@@ -1,26 +1,25 @@
-
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
     port: 587,
-    secure: false,
+    secure: false, // true for 465, false for other ports
     auth: {
-        user: "7a8dac001@smtp-brevo.com",
-        pass: "yzMERD8rF3tajHUf"
+        user: "7a8dac001@smtp-brevo.com", // Seu usuário de e-mail
+        pass: "yzMERD8rF3tajHUf"          // Sua senha de e-mail
     }
 });
 
 let mailOptions = {
-    from: '"Seu nome" <email@gmail.com>',
-    to: "outroemail@gmail.com",
-    subject: "Teste do Email",
-    text: "Teste enviado com sucesso"
+    from: '"Seu nome" <email@gmail.com>',  // Remetente
+    to: "outroemail@gmail.com",             // Destinatário
+    subject: "Teste do Email",              // Assunto
+    text: "Teste enviado com sucesso"       // Conteúdo do e-mail
 };
 
 transporter.sendMail(mailOptions, (error, info) => {
-     if (error){
+    if (error) {
         return console.log(error);
-     }
-     console.log("Email enviado" + info.response);
-})
+    }
+    console.log("Email enviado: " + info.response);
+});
