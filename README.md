@@ -52,7 +52,7 @@ Para enviar um e-mail, execute o seguinte comando no terminal:
 
 bash
 ```
-node src/sendEmail.js
+node sendEmail.js
 ```
 Se tudo estiver configurado corretamente, você verá a mensagem Email enviado: <resposta do servidor> no console.
 📄 Estrutura do Projeto
