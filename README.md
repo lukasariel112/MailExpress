@@ -15,10 +15,10 @@
 Comece clonando o repositório e navegando até o diretório do projeto:
 
 bash
-
+```
 git clone https://github.com/seu-usuario/MailExpress.git
 cd MailExpress 
-
+```
 2. Instalar Dependências
 
 Certifique-se de ter o Node.js instalado em sua máquina. Em seguida, instale as dependências necessárias:
