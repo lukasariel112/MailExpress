@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false, 
     auth: {
         user: "7a8dac001@smtp-brevo.com", // Seu usuário de e-mail
         pass: "yzMERD8rF3tajHUf"          // Sua senha de e-mail
