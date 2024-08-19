@@ -1,8 +1,3 @@
-Aqui está um `README.md` formatado e pronto para você copiar e colar:
-
----
-
-```markdown
 # MailExpress 📧
 
 **MailExpress** é um projeto simples e eficiente para enviar e-mails usando Node.js e Nodemailer. Este repositório demonstra como integrar o envio de e-mails através do serviço SMTP da Brevo (anteriormente Sendinblue), utilizando credenciais diretamente no código.
@@ -22,21 +17,21 @@ Comece clonando o repositório e navegando até o diretório do projeto:
 ```bash
 git clone https://github.com/seu-usuario/MailExpress.git
 cd MailExpress
-```
 
-### 2. Instalar Dependências
+2. Instalar Dependências
 
 Certifique-se de ter o Node.js instalado em sua máquina. Em seguida, instale as dependências necessárias:
 
-```bash
-npm install
-```
+bash
 
-### 3. Configuração de Credenciais
+npm install
+
+3. Configuração de Credenciais
 
 As credenciais de e-mail já estão definidas no código, como mostrado abaixo:
 
-```javascript
+javascript
+
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
@@ -62,21 +57,20 @@ transporter.sendMail(mailOptions, (error, info) => {
     }
     console.log("Email enviado: " + info.response);
 });
-```
 
-### 4. Enviar um E-mail
+4. Enviar um E-mail
 
 Para enviar um e-mail, execute o seguinte comando no terminal:
 
-```bash
+bash
+
 node src/sendEmail.js
-```
 
-Se tudo estiver configurado corretamente, você verá a mensagem `Email enviado: <resposta do servidor>` no console.
+Se tudo estiver configurado corretamente, você verá a mensagem Email enviado: <resposta do servidor> no console.
+📄 Estrutura do Projeto
 
-## 📄 Estrutura do Projeto
+bash
 
-```bash
 MailExpress/
 ├── node_modules/       # Módulos instalados via npm
 ├── src/
@@ -84,20 +78,18 @@ MailExpress/
 ├── package.json        # Dependências e scripts do projeto
 ├── README.md           # Documentação do projeto
 └── ...
-```
 
-## 📢 Aviso de Segurança
+📢 Aviso de Segurança
 
 É importante lembrar que armazenar credenciais diretamente no código não é uma prática recomendada, especialmente em ambientes de produção. Considere o uso de variáveis de ambiente ou serviços de gerenciamento de segredos para proteger suas credenciais.
+📝 Licença
 
-## 📝 Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Feito com ❤️ por Seu Nome
 
----
+yaml
 
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)
-```
 
 ---
 
