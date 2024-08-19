@@ -14,9 +14,10 @@
 
 Comece clonando o repositório e navegando até o diretório do projeto:
 
-```bash
+bash
+
 git clone https://github.com/seu-usuario/MailExpress.git
-cd MailExpress
+cd MailExpress 
 
 2. Instalar Dependências
 
@@ -69,16 +70,6 @@ node src/sendEmail.js
 Se tudo estiver configurado corretamente, você verá a mensagem Email enviado: <resposta do servidor> no console.
 📄 Estrutura do Projeto
 
-bash
-
-MailExpress/
-├── node_modules/       # Módulos instalados via npm
-├── src/
-│   ├── sendEmail.js    # Script principal para enviar e-mails
-├── package.json        # Dependências e scripts do projeto
-├── README.md           # Documentação do projeto
-└── ...
-
 📢 Aviso de Segurança
 
 É importante lembrar que armazenar credenciais diretamente no código não é uma prática recomendada, especialmente em ambientes de produção. Considere o uso de variáveis de ambiente ou serviços de gerenciamento de segredos para proteger suas credenciais.
@@ -86,10 +77,7 @@ MailExpress/
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-Feito com ❤️ por Seu Nome
-
-yaml
-
+Feito com ❤️ por Lucas Ariel
 
 ---
 
